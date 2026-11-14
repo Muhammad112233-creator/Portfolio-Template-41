@@ -1,0 +1,51 @@
+.band {
+  position: relative;
+  border-top: 1px solid var(--ink);
+  border-bottom: 1px solid var(--ink);
+  background: var(--ink);
+  color: var(--bone);
+  overflow: hidden;
+  margin-block: clamp(2rem, 5vw, 4rem);
+}
+
+.row {
+  padding-block: clamp(0.35rem, 0.8vw, 0.6rem);
+}
+
+.rowOutline {
+  border-top: 1px solid rgba(237, 232, 221, 0.16);
+  color: transparent;
+}
+
+.word {
+  display: inline-flex;
+  align-items: center;
+  gap: 1.6rem;
+  font-family: var(--display);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: -0.035em;
+  font-size: clamp(1.6rem, 4.4vw, 3.4rem);
+  line-height: 1;
+  padding-block: 0.2em;
+  white-space: nowrap;
+}
+
+.word svg {
+  flex: 0 0 auto;
+  color: var(--acid);
+  transform: translateY(-0.1em);
+}
+
+.outline {
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(237, 232, 221, 0.55);
+}
+
+.outline svg {
+  color: rgba(203, 242, 77, 0.5);
+}
+
+.band:hover .word svg {
+  color: var(--clay);
+}

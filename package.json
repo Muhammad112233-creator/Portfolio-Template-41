@@ -1,0 +1,28 @@
+{
+  "name": "volta-portfolio",
+  "version": "1.0.0",
+  "private": false,
+  "description": "VOLTA — a loud, motion-first creative portfolio template built with Next.js and zero animation libraries.",
+  "keywords": [
+    "portfolio",
+    "portfolio-template",
+    "nextjs",
+    "creative-developer",
+    "designer-portfolio",
+    "static-site",
+    "github-pages"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "preview": "npm run build && npx --yes serve@14 out -l 3000",
+    "clean": "rm -rf .next out"
+  },
+  "dependencies": {
+    "next": "^15.5.29",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  }
+}

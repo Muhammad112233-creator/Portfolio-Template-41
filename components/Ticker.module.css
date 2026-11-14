@@ -1,0 +1,29 @@
+.bar {
+  position: relative;
+  z-index: 50;
+  background: var(--acid);
+  border-bottom: 1px solid var(--ink);
+  overflow: hidden;
+}
+
+.marquee {
+  padding-block: 0.5rem;
+}
+
+.item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-family: var(--mono);
+  font-size: 0.66rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: var(--ink);
+}
+
+.item svg {
+  flex: 0 0 auto;
+  opacity: 0.8;
+}
